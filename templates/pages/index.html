@@ -34,24 +34,127 @@
       id="logoBox"
       class="title">
       <img
-        src="/.static/logo.png"
+        src="/.static/uhubPOWER.png"
         class="logoImg"
-        alt="logo" />
+        alt="logo"
+        title="Power U"/>
+        <img
+        src="/.static/uhubPOWERREVERSE.png"
+        class="logoImgDark"
+        alt="logo"
+        title="Reverse Power U"/>
+        <img
+        src="/.static/uhubCLASSICFIXED.png"
+        class="logoImgClassic"
+        alt="logo"
+        title="Script U"/>
+        <img
+        src="/.static/uhubCLASSICFIXEDREVERSED.png"
+        class="logoImgClassicDark"
+        alt="logo"
+        title="Reverse Script U"/>
     </div>
 
     <div
       id="infoBox"
       class="title">
-      <p>Insert title here</p>
+      <p id="randomQuote" title="click me!" style="font-size: 80%;"></p>
+      <br>
+      <p>Welcome to UHub, an anonymous message board for UMass & other Five College students.</p><br>
+      <a href="/.static/pages/globalRules.html" style="font-size: 80%;">Read the rules!</a><br>
+      <audio controls title="U-Mass" style="scale: .7;">
+        <source src="/.static/umass.webm" type="audio/webm">
+      </audio>
+      
+      <fieldset class="titleFieldset">
+        <legend>News</legend>
+      <p id="annoTitle">Loading...
+      </p>
+      <p style="display: flex;">
+        <span id="annoMessage"></span>
+          <img id="annoImage" style="width:auto;height:200px;"></p>
+      <a id="annoLink"></a>
+    </fieldset>
+
+      <div class="boxcontent">
+
+        <table id="siteBoardTable">
+          <caption style="text-align: left;">Boards:<span style="float:right">Stats: <span id="labelTotalPosts"></span> posts / <span id="labelTotalBoards"></span> boards / <span id="labelTotalFiles"></span> files</span></caption>
+          <tr>
+            <th class="siteBoardBody TableTop">Main Boards</th>
+            <th class="siteBoardBody TableTop">Five Colleges</th>
+            <th class="siteBoardBody TableTop TableRight">Interests</th>
+          </tr>
+          <tr>
+            <td class="siteBoardBody"><a href="/study">Academics</a></td>
+            <td class="siteBoardBody"><a href="/amherst">Amherst College</a></td>
+            <td class="siteBoardBody TableRight"><a href="/adv">Advice</a></td>
+          </tr>
+          <tr>
+            <td class="siteBoardBody"><a href="/house">Housing</a></td>
+            <td class="siteBoardBody"><a href="/hamp">Hampshire College</a></td>
+            <td class="siteBoardBody TableRight"><a href="/art">Art & Photos</a></td>
+          </tr>
+          <tr>
+            <td class="siteBoardBody"><a href="/food">Dining & Cooking</a></td>
+            <td class="siteBoardBody"><a href="/smith">Smith College</a></td>
+            <td class="siteBoardBody TableRight"><a href="/mu">Music</a></td>
+          </tr>
+          <tr>
+            <td class="siteBoardBody"><a href="/clife">Campus Life</a></td>
+            <td class="siteBoardBody"><a href="/mount">Mount Holyoke</a></td>
+            <td class="siteBoardBody TableRight"><a href="/tv">TV & Film</a></td>
+          </tr>
+          <tr>
+            <td class="siteBoardBody"><a href="/work">Jobs</a></td>
+            <td class="siteBoardBody"><a href="/other">Other Colleges</a></td>
+            <td class="siteBoardBody TableRight"><a href="/a">Anime</a></td>
+          </tr>
+          <tr>
+            <td class="siteBoardBody"></td>
+            <td class="siteBoardBody"></td>
+            <td class="siteBoardBody TableRight"><a href="/spf">Sports & Fitness</a></td>
+          </tr>
+          <tr>
+            <td class="siteBoardBody"></td>
+            <td class="siteBoardBody"></td>
+            <td class="siteBoardBody TableRight"><a href="/lit">Literature</a></td>
+          </tr>
+          <tr>
+            <td class="siteBoardBody"></td>
+            <td class="siteBoardBody"></td>
+            <td class="siteBoardBody TableRight"><a href="/fa">Fashion</a></td>
+          </tr>
+          <tr>
+            <td class="siteBoardBody TableBottom"></td>
+            <td class="siteBoardBody TableBottom"></td>
+            <td class="siteBoardBody TableBottom TableRight"><a href="/uhub">Site Meta</a></td>
+          </tr>
+        </table>
+        
+      </div>
+      <table id="siteBoardTable1">
+        <tr>
+          <th id="siteBoardTableLeft">Latest Images</th>
+          <th id="siteBoardTableRight">Latest Posts</th>
+        </tr>
+        <tr>
+          <td id="imageList"><div id="divLatestImages"></div></td>
+          <td><div id="divLatestPosts"></div></td>
+        </tr>
+      </table>
+      <!--<br><br>
+      <span class="linkGroup">
+        [<a
+        href="/.static/pages/about.html"
+        id="linkAbout">
+      </a> / <a
+      href="/.static/pages/globalRules.html"
+      id="linkGlobalRules">
+    </a>]
+        </span>-->
     </div>
-
-    <div
-      id="divBoards"
-      class="topBoards title"></div>
-
-    <div id="divLatestImages"></div>
-
-    <div id="divLatestPosts"></div>
+    
 
     <div
       id="links"
@@ -103,20 +206,10 @@
       <span>]</span>
     </div>
 
-    <div id="divStats">
-      <span>[</span> <span>Total posts: <span id="labelTotalPosts"></span></span>
-      <span>/</span> <span>Posts in last hour: <span id="labelTotalPPH"></span></span>
-      <span>/</span> <span>Unique recent IPs: <span id="labelTotalIps"></span></span>
-      <span>/</span> <span>Total boards: <span id="labelTotalBoards"></span></span>
-      <span>/</span> <span>Media files stored: <span id="labelTotalFiles"></span></span>
-      <span>/</span> <span>Total media size: <span id="labelTotalSize"></span></span>
-      <span>]</span>
-    </div>
-
   </div>
 
   <footer>
-    <span>Insert footer here</span>
+    <span>umass.ch and UHub are not associated with or endorsed by the University of Massachusetts</span>
   </footer>
 
 </body>
@@ -126,5 +219,6 @@
 <script src="/.static/js/draggable.js"></script>
 <script src="/.static/js/watcher.js"></script>
 <script src="/.static/js/favouriteBoards.js"></script>
-
+<script src="/.static/js/randomQuote.js"></script>
+<script src="/.static/js/announceIndex.js"></script>
 </html>

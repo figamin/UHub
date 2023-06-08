@@ -288,9 +288,6 @@ video {
 }
 
 /*Board header*/
-.boardHeader p {
-  color: #663E11;
-}
 
 .boardHeader p#labelName {
   font-size: 200%;

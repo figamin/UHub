@@ -3,14 +3,17 @@ var themes = {};
 themes.init = function() {
 
   themes.themes = [ {
-    label : 'Clear',
-    id : 'clear'
+    label : 'Modern Dark',
+    id : 'mod_dark'
   }, {
-    label : 'Cyberpunk',
-    id : 'cyber'
+    label : 'Classic Light',
+    id : 'class_light'
+  }, {
+    label : 'Classic Dark',
+    id : 'class_dark'
   } ];
 
-  var postingLink = document.getElementById('navPosting');
+  var postingLink = document.getElementById('lastHeader');
 
   if (!postingLink) {
     return;
@@ -21,9 +24,9 @@ themes.init = function() {
   postingLink.parentNode.insertBefore(document.createTextNode(' '),
       referenceNode);
 
-  var divider = document.createElement('span');
+  /*var divider = document.createElement('span');
   divider.innerHTML = '/';
-  postingLink.parentNode.insertBefore(divider, referenceNode);
+  postingLink.parentNode.insertBefore(divider, referenceNode);*/
 
   postingLink.parentNode.insertBefore(document.createTextNode(' '),
       referenceNode);
@@ -32,7 +35,7 @@ themes.init = function() {
   themeSelector.id = 'themeSelector';
 
   var vanillaOption = document.createElement('option');
-  vanillaOption.innerHTML = 'Default';
+  vanillaOption.innerHTML = 'Modern Light';
   themeSelector.appendChild(vanillaOption);
 
   for (var i = 0; i < themes.themes.length; i++) {
